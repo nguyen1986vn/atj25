@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install type="component" method="upgrade" version="2.5">
+	<name>com_book</name>
+	<author>AT</author>
+	<creationDate>30/05/2012</creationDate>
+	<authorEmail>nguyen1986vm@gmail.com</authorEmail>
+	<authorUrl>www.at.com</authorUrl>
+	<copyright>Nguyen Tuan</copyright>
+	<license>GNT/GPL</license>
+	<description>Book Shopping</description>
+	
+	<files folder="site">
+		<filename>book.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages folder="site/language">
+		<lang tag="en-GB">en-GB.com_book.ini</lang>
+	</languages>
+	
+	<administration>
+	
+		<files folder="admin">
+			<filename>book.php</filename>
+			<filename>index.html</filename>
+		</files>
+	
+	<languages folder="admin/language">
+		<lang tag="en-GB">en-GB.com_book.ini</lang>
+		<lang tag="en-GB">en-GB.com_book.sys.ini</lang>
+	</languages>
+	
+	<menu link="option=com_book">COM_BOOK_SHOPPING</menu>
+    <submenu>
+      <menu link="option=com_book&amp;controller=category">COM_BOOK_CATEGORY</menu>
+      <menu link="option=com_book&amp;controller=item">COM_BOOK_BOOK</menu>
+      <menu link="option=com_book&amp;controller=invoice">COM_BOOK_INVOICE</menu>
+    </submenu>
+	</administration>
+</install>
